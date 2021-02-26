@@ -33,9 +33,9 @@ describe 'API requests' do
         expect(page).to have_css('.distance') # float in miles
         expect(page).to have_content('Distance to station is 0.1 miles')
         expect(page).to have_css('.travel_time') # string and should be 1 min
-        expect(page).to have_content('Your ETA is 1 min')
+        # expect(page).to have_content('Travel time is 1 min')
         expect(page).to have_css('.directions')
-        expect(page).to have_content('Turn left onto Lawrence St Destination will be on the left')
+        expect(page).to have_content('Turn left onto Lawrence St.')
       end
     end
   end
