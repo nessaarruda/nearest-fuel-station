@@ -1,5 +1,5 @@
-<h1>The closest electric fuel stations for <%= @fuel_type %> is <%= @name %> at <%= @address %></h1>
-<h1 class="access_times">Access Times: <%= @access_times %></h1>
-<h1 class="distance">Distance to station is <%= @distance %> miles.</h1>
-<h1 class="travel_time">Travel Time is <%= @travel_time %>.</h1>
-<h1 class="directions">Directions: <%= @directions %></h1>
+<h1>The closest electric fuel stations for <%= @station.fuel_type %> is <%= @station.name %> at <%= @station.address %></h1>
+<h1 class="access_times">Access Times: <%= @station.access_times %></h1>
+<h1 class="distance">Distance to station is <%= @station.distance %> miles.</h1>
+<%# <!-- <h1 class="travel_time">Travel Time is <%= @station.travel_time %>
+<%# <!-- <h1 class="directions">Directions: <%= @station.directions %>

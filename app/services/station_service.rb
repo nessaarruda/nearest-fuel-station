@@ -2,7 +2,8 @@ class StationService
 
   def self.station_data
     response = conn.get("/api/alt-fuel-stations/v1/nearest.json?api_key=#{ENV['FUEL_API_KEY']}&format=json&fuel_type=ELEC&location=80202")
-    parsed(response)[:fuel_stations][0]
+    data = parsed(response)[:fuel_stations][0]
+    Station.new(data)
   end
 
   private
