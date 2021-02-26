@@ -29,11 +29,8 @@ describe 'API requests' do
         click_button 'Find Nearest Station'
 
         expect(current_path).to eq(search_path)
-        expect(page).to have_css('.name')
-        expect(page).to have_css('.address')
-        expect(page).to have_css('.fuel_type')
         expect(page).to have_css('.access_times')
-        expect(page).to have_css('.distance_to_station') # float in miles
+        expect(page).to have_css('.distance') # float in miles
         expect(page).to have_content('Distance to station is 0.1 miles')
         expect(page).to have_css('.travel_time') # string and should be 1 min
         expect(page).to have_content('Your ETA is 1 min')
