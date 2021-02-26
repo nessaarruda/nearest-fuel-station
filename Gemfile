@@ -15,9 +15,15 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap'
+gem 'faraday'
+gem 'mini_racer'
+gem 'figaro'
+gem 'fast_jsonapi'
+
 
 group :development, :test do
   gem 'pry'
+  gem 'nyan-cat-formatter'
 end
 
 group :test do
