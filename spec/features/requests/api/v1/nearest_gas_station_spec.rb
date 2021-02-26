@@ -26,7 +26,7 @@ describe 'API requests' do
 
         select 'Turing', from: :location
 
-        click_button 'Find nearest station'
+        click_button 'Find Nearest Station'
 
         expect(current_path).to eq(search_path)
         expect(page).to have_css('.name')

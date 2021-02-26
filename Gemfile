@@ -24,6 +24,7 @@ gem 'fast_jsonapi'
 group :development, :test do
   gem 'pry'
   gem 'nyan-cat-formatter'
+  gem 'shoulda-matchers'
 end
 
 group :test do
